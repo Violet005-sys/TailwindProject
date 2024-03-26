@@ -1,0 +1,400 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+  <link href="./output.css" rel="stylesheet">
+</head>
+<body class="relative">
+
+<!-- This is the header that contains the navbar -->
+
+  <header class="flex justify-center">
+    <!-- This is the navbar that contains the brand logo,nav links,log in and sign up buttons -->
+    <nav class="flex flex-row justify-between w-10/12 py-5 px-6 bg-white align-middle absolute rounded-b-lg">
+      <div class="bloglogo">
+        <!-- <img src="" alt="this is the brand's logo" class=""> -->
+        <h3 class="logo font-bold text -base">Stuffus</h3>
+      </div>
+      <div class="navmenu p-3">
+        <ul class="flex justify-between gap-x-8 m-0 p-0">
+          <li >Blog</li>
+          <li >About</li>
+          <li >Contact Us</li>
+        </ul>
+      </div>
+      <div class="accountdetails flex justify-between gap-4">
+        <button class="button bg-white text-slate-900 border-slate-900 border-2 font-semibold">Sign Up</button>
+        <button class="button">Log In</button>
+      </div>
+    </nav>
+  </header>
+
+
+<!-- This is the main section containing the herosection, 2 main blog sections and the newsletter -->
+  <main  >
+
+ <!-- This is the herosection -->
+    <section class="herosection grid grid-cols-5 bg-gray-800 pl-16">
+      <article class="leftside grid grid-rows-2 mt-48 col-span-2 ">
+        <figure class="toppart text-white">
+          <div class="subtitle block"><p class="inline pr-2">Newest Blog<span class="px-2 font-semibold">·</span></p><small class="inline">4 Min</small></div>
+        <h1 class="herotitle">The Art of Home Transformation</h1>
+        <p class="descriptiontext text-base pl-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi unde iusto amet.</p>
+        <button class="herobutton button mt-6">
+          Read More
+        </button>
+        </figure>
+        <figure class="bottompart mt-12">
+          <div class="flex flex-row gap-4 justify-start text-slate-200">
+            <img class="rounded-full" src="https://images.unsplash.com/photo-1597066906248-c8d6606c6d70?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDF8dG93SlpGc2twR2d8fGVufDB8fHx8fA%3D%3D" alt="This is the writer's avatar" style="width: 100px; height: 100px;">
+            <div class="profileinformation flex flex-col gap-2 justify-center">
+              <div class="descriptiontext">Written by</div>
+              <div class="authorsname font-bold">Aiel Ben Jjin</div>
+            </div>
+          </div>
+          
+        </figure>
+        <div class="bottombutton herobutton bg-gray-800 text-white">
+          <button class="button rightside">
+            Next
+            <i class="bi bi-arrow-right-short"></i>
+          </button>
+        </div>
+
+      </article>
+      <article class="rightside col-span-3">
+        <img src="images/2.jpg" alt="this is a picture of a lady using her laptop while sitting in bed" class="h-full w-auto">
+      </article>
+    </section>
+
+
+
+
+<!-- This is the section that contains blog posts -->
+    <section class="blogssection mx-12 my-8 ">
+      <article class="headerbar flex justify-between">
+        <figure class="leftside">
+          <div class="bloglogo">
+            <!-- <img src="" alt="this is the brand's logo">  -->
+            <h3 class="logo">Stuffus Blog</h3>
+          </div>
+        </figure>
+        <figure class="rightside">
+          <div class="bar emailbar bg-white rounded-full flex flex-row justify-start max-w-fit border-slate-100 border-2 px-2">
+            <input type="text" class="rounded-full py-2 pl-4 pr-12 " placeholder="Search On Stuffus" >
+            <button class="searchbutton button bg-slate-900 m-2 text-white p-2 px-6 rounded-full ">
+              Search
+            </button>
+          </div>
+        </figure>
+      </article>
+
+       <article class="topblogssection my-10 mb-4">
+        <h2 >Top Blogs</h2>
+        <figure class="cardsgroup grid grid-cols-4 gap-x-16">
+
+            <div class="card leftside col-span-2 row-span-2 w-full flex flex-col " >
+
+              <img class="rounded-lg min-w-full" src="images/pexels-this-is-zun-1140827.jpg" alt="Six pretty women on the coastline of a lake">
+
+              <div class="blogdesctext gap-y-0">
+              <div class="toppart py-2 pb-8">
+              <small >10 Min</small>
+              <h3 >Sea Marvels for your home</h3>
+              <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis a praesentium sequi neque, magnam animi ipsam quibusdam ratione atque obcaecati est ut iure ipsa dolore. Consectetur.</p>
+              </div>
+              <figure class="bottompart">
+          <div class="flex flex-row gap-4 ">
+          <img class="rounded-full" src="https://images.unsplash.com/photo-1597066906248-c8d6606c6d70?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDF8dG93SlpGc2twR2d8fGVufDB8fHx8fA%3D%3D" alt="This is the writer's avatar" style="max-width: 40px;">
+          <div class="profileinformation">
+          <p class=>Written by</p>
+          <div class="authorsname font-bold text-black text-sm ">Aiel Ben Jjin</div>
+          </div>
+          </div>
+          
+              </figure>
+              </div>
+
+            </div>
+
+          <div class="cards rightside col-span-2 grid grid-rows-2 grid-cols-1 gap-y-12">
+
+            <div class="topcard card flex flex-row gap-2 row-span-1">
+
+                <img class="rounded-lg w-1/2" src="images/pexels-olena-bohovyk-5686478.jpg" alt="Six pretty women on the coastline of a lake" style="max-height: 350px;">
+
+                <div class="blogdesctext">
+                 <div class="toppart py-2 pb-8">
+                  <small >10 Min</small>
+
+                  <h3 >Essential Home Decor Everyone Needs</h3>
+  
+                  <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis a praesentium sequi neque, magnam animi ipsam quibusdam ratione atque obcaecati est ut iure ipsa dolore. Consectetur.</p>
+                 </div>
+
+                <figure class="bottompart">
+            
+            <img class="rounded-full" src="https://images.unsplash.com/photo-1597066906248-c8d6606c6d70?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDF8dG93SlpGc2twR2d8fGVufDB8fHx8fA%3D%3D" alt="This is the writer's avatar" style="max-width: 40px;">
+
+            <div class="profileinformation">
+            <p class=>Written by</p>
+
+            <div class="authorsname font-bold text-black text-sm ">Aiel Ben Jjin</div>
+
+            </div>
+
+                </figure>
+              
+              </div>
+
+
+            </div>
+            <div class="bottomcard card flex flex-row gap-2 h-full row-span-1">
+
+                <img class="rounded-lg w-1/2" src="https://images.pexels.com/photos/945688/pexels-photo-945688.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Woman walking on a coastline" style="max-height: 350px;">
+
+                <div class="blogdesctext" >
+                <div class="toppart py-2 pb-8">
+                  <small >10 Min</small>
+                <h3 >Crafting Your Own Journey</h3>
+                <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis a praesentium sequi neque, magnam animi ipsam quibusdam ratione atque obcaecati est ut iure ipsa dolore. Consectetur.</p>
+                </div>
+                <figure class="bottompart">
+
+            <img class="rounded-full" src="https://images.unsplash.com/photo-1597066906248-c8d6606c6d70?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDF8dG93SlpGc2twR2d8fGVufDB8fHx8fA%3D%3D" alt="This is the writer's avatar" style="max-width: 40px;">
+
+            <div class="profileinformation">
+            <p class=>Written by</p>
+
+            <div class="authorsname font-bold text-black text-sm ">Aiel Ben Jjin</div>
+
+            </div>
+            
+                </figure>
+                </div>
+              </div>
+            
+          </div>
+        </figure>
+      </article> 
+
+      <article class="latestblogssection cardgroup">
+        <h2>Latest blogs</h2>
+        <div class="cardsgroup grid grid-cols-3 grid-rows-2 gap-12 gap-y-20">
+          <div class="card leftside  w-full flex flex-col ">
+
+            <img class="rounded-lg min-w-full" src="https://images.pexels.com/photos/276534/pexels-photo-276534.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Six pretty women on the coastline of a lake" style="height: 260px;">
+
+            <div class="blogdesctext gap-y-0">
+            <div class="toppart py-2 pb-8">
+            <small >10 Min</small>
+            <h3 >Tech Marvels for your home</h3>
+            <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis a praesentium sequi neque, magnam animi ipsam quibusdam ratione atque obcaecati est ut iure ipsa dolore. Consectetur.</p>
+            </div>
+            <figure class="bottompart">
+        <div class="flex flex-row gap-4 ">
+        <img class="rounded-full" src="https://images.unsplash.com/photo-1597066906248-c8d6606c6d70?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDF8dG93SlpGc2twR2d8fGVufDB8fHx8fA%3D%3D" alt="This is the writer's avatar" style="max-width: 40px;">
+        <div class="profileinformation">
+        <p class=>Written by</p>
+        <div class="authorsname font-bold text-black text-sm ">Aiel Ben Jjin</div>
+        </div>
+        </div>
+        
+            </figure>
+            </div>
+
+          </div>
+          <div class="card leftside  w-full flex flex-col " >
+
+            <img class="rounded-lg min-w-full" src="https://images.pexels.com/photos/775219/pexels-photo-775219.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Six pretty women on the coastline of a lake" style="height: 260px;">
+
+            <div class="blogdesctext gap-y-0">
+            <div class="toppart py-2 pb-8">
+            <small >10 Min</small>
+            <h3 >Tech Marvels for your home</h3>
+            <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis a praesentium sequi neque, magnam animi ipsam quibusdam ratione atque obcaecati est ut iure ipsa dolore. Consectetur.</p>
+            </div>
+            <figure class="bottompart">
+        <div class="flex flex-row gap-4 ">
+        <img class="rounded-full" src="https://images.unsplash.com/photo-1597066906248-c8d6606c6d70?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDF8dG93SlpGc2twR2d8fGVufDB8fHx8fA%3D%3D" alt="This is the writer's avatar" style="max-width: 40px;">
+        <div class="profileinformation">
+        <p class=>Written by</p>
+        <div class="authorsname font-bold text-black text-sm ">Aiel Ben Jjin</div>
+        </div>
+        </div>
+        
+            </figure>
+            </div>
+
+          </div>
+          <div class="card leftside  w-full flex flex-col " >
+
+            <img class="rounded-lg min-w-full" src="https://images.pexels.com/photos/609768/pexels-photo-609768.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Six pretty women on the coastline of a lake" style="height: 260px;">
+
+            <div class="blogdesctext gap-y-0">
+            <div class="toppart py-2 pb-8">
+            <small >10 Min</small>
+            <h3 >Tech Marvels for your home</h3>
+            <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis a praesentium sequi neque, magnam animi ipsam quibusdam ratione atque obcaecati est ut iure ipsa dolore. Consectetur.</p>
+            </div>
+            <figure class="bottompart">
+        <div class="flex flex-row gap-4 ">
+        <img class="rounded-full" src="https://images.unsplash.com/photo-1597066906248-c8d6606c6d70?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDF8dG93SlpGc2twR2d8fGVufDB8fHx8fA%3D%3D" alt="This is the writer's avatar" style="max-width: 40px;">
+        <div class="profileinformation">
+        <p class=>Written by</p>
+        <div class="authorsname font-bold text-black text-sm ">Aiel Ben Jjin</div>
+        </div>
+        </div>
+        
+            </figure>
+            </div>
+
+          </div>
+          <div class="card leftside  w-full flex flex-col " >
+
+            <img class="rounded-lg min-w-full" src="https://images.pexels.com/photos/3097112/pexels-photo-3097112.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Six pretty women on the coastline of a lake" style="height: 260px;">
+
+            <div class="blogdesctext gap-y-0">
+            <div class="toppart py-2 pb-8">
+            <small >10 Min</small>
+            <h3 >Tech Marvels for your home</h3>
+            <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis a praesentium sequi neque, magnam animi ipsam quibusdam ratione atque obcaecati est ut iure ipsa dolore. Consectetur.</p>
+            </div>
+            <figure class="bottompart">
+        <div class="flex flex-row gap-4 ">
+        <img class="rounded-full" src="https://images.unsplash.com/photo-1597066906248-c8d6606c6d70?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDF8dG93SlpGc2twR2d8fGVufDB8fHx8fA%3D%3D" alt="This is the writer's avatar" style="max-width: 40px;">
+        <div class="profileinformation">
+        <p class=>Written by</p>
+        <div class="authorsname font-bold text-black text-sm ">Aiel Ben Jjin</div>
+        </div>
+        </div>
+        
+            </figure>
+            </div>
+
+          </div>
+          <div class="card leftside  w-full flex flex-col " >
+
+            <img class="rounded-lg min-w-full" src="https://images.pexels.com/photos/220749/pexels-photo-220749.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Six pretty women on the coastline of a lake" style="height: 260px;">
+
+            <div class="blogdesctext gap-y-0">
+            <div class="toppart py-2 pb-8">
+            <small >10 Min</small>
+            <h3 >Tech Marvels for your home</h3>
+            <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis a praesentium sequi neque, magnam animi ipsam quibusdam ratione atque obcaecati est ut iure ipsa dolore. Consectetur.</p>
+            </div>
+            <figure class="bottompart">
+        <div class="flex flex-row gap-4 ">
+        <img class="rounded-full" src="https://images.unsplash.com/photo-1597066906248-c8d6606c6d70?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDF8dG93SlpGc2twR2d8fGVufDB8fHx8fA%3D%3D" alt="This is the writer's avatar" style="max-width: 40px;">
+        <div class="profileinformation">
+        <p class=>Written by</p>
+        <div class="authorsname font-bold text-black text-sm ">Aiel Ben Jjin</div>
+        </div>
+        </div>
+        
+            </figure>
+            </div>
+
+          </div>
+          <div class="card leftside  w-full flex flex-col " >
+
+            <img class="rounded-lg min-w-full" src="https://images.pexels.com/photos/37347/office-sitting-room-executive-sitting.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Six pretty women on the coastline of a lake" style="height: 260px;">
+
+            <div class="blogdesctext gap-y-0">
+            <div class="toppart py-2 pb-8">
+            <small >10 Min</small>
+            <h3 >Tech Marvels for your home</h3>
+            <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis a praesentium sequi neque, magnam animi ipsam quibusdam ratione atque obcaecati est ut iure ipsa dolore. Consectetur.</p>
+            </div>
+            <figure class="bottompart">
+        <div class="flex flex-row gap-4 ">
+        <img class="rounded-full" src="https://images.unsplash.com/photo-1597066906248-c8d6606c6d70?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDF8dG93SlpGc2twR2d8fGVufDB8fHx8fA%3D%3D" alt="This is the writer's avatar" style="max-width: 40px;">
+        <div class="profileinformation">
+        <p class=>Written by</p>
+        <div class="authorsname font-bold text-black text-sm ">Aiel Ben Jjin</div>
+        </div>
+        </div>
+        
+            </figure>
+            </div>
+
+          </div>
+        </div>
+         </article>
+
+    </section>
+
+<!-- This section conatins the newsletter -->
+    <section class="newsletter grid grid-cols-2 grid-rows-1 bg-slate-900 text-white py-6 pb-10 px-14 my-24 m-8 gap-x-32 min-h-40 rounded-lg">
+      <article class="leftsection flex flex-col justify-between gap-12">
+        <div class="div">
+          <h3 class="text-5xl">Ready To Get Our New Stuff?</h3>
+        </div>        
+        <div class="bar emailbar bg-white rounded-full flex flex-row justify-start max-w-fit">
+          <input type="text" class="rounded-full py-2 pl-4 pr-12" placeholder="Email Address" >
+          <button class="searchbutton button bg-slate-900 m-2 text-white p-2 px-4 rounded-full">
+            Send
+          </button>
+        </div>
+      </article>
+      <article class="rightsection flex flex-col justify-end">
+        <h5 class="subtitle text-lg font-medium">Stuffus For Homes and Needs</h5>
+        <div class="descriptiontext">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, impedit. Tempora quasi est impedit sint dolore omnis dolores enim commodi ratione provident harum officia, </div>
+      </article>
+    </section>
+
+
+  </main>
+
+
+  
+  
+  <!-- This is the footer containing additional nav-links and social media links.It also has copyright information. -->
+  <footer>
+    <div class="top flex flex-row justify-between m-10 p-10">
+      <div class="leftside flex flex-row justify-start gap-40 py-10">
+        <div class="aboutsection">
+          <h6>About</h6>
+          <ul>
+            <li>Blog</li>
+            <li>Meet The Team</li>
+            <li>Our Headquarters</li>
+          </ul>
+        </div>
+        <div class="supportsection">
+          <h6>Support</h6>
+          <ul>
+            <li>Contact Us</li>
+            <li>Shipping</li>
+            <li>Return</li>
+          </ul>
+        </div>
+      </div>
+      <div class="rightside py-10">
+        <h6>Social Media</h6>
+            <div class="icons flex flex-row gap-3">
+              <div class="instagram"><i class="bi bi-instagram"></i></div>
+            <div class="linkedin"><i class="bi bi-linkedin"></i></div>
+            
+            <div class="facebook">
+              <i class="bi bi-facebook"></i>
+            </div>
+            </div>
+      </div>
+    </div>
+    <div class="bottom text-center bg-slate-900 py-4">
+      <p>Copyright</p>
+    </div>
+  </footer>
+
+
+
+
+
+
+
+  
+</body>
+</html>

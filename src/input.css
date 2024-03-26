@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    h1{
+        @apply text-7xl pt-2 py-1 px-0 font-medium mx-0 text-slate-100
+    }
+    h2 {
+        @apply text-5xl font-medium py-8
+    }
+    h3 {
+        @apply text-3xl font-medium pt-2
+    }
+    h6{
+        @apply text-xl font-normal text-slate-400
+    }
+    p {
+        @apply text-gray-400 text-sm font-normal
+    }
+    small {
+        @apply font-extralight text-sm text-gray-400
+    }
+    footer li{
+        @apply font-normal text-sm text-slate-400 hover:text-slate-800
+    }
+    li{
+        @apply font-semibold hover:text-slate-400 p-0 m-0
+    }
+
+    .button{
+        @apply  bg-slate-900 text-white p-2 px-4 rounded-full 
+    }
+    .herobutton{
+        @apply bg-slate-100 text-gray-800 my-4 ml-1 mb-10 font-normal
+    }
+    .card img{
+        max-width: 300px;
+    }
+
+    .card figure {
+        @apply flex flex-row
+    }
+    .blogdesctext{
+        @apply flex flex-col justify-start pl-4
+    }
+}
